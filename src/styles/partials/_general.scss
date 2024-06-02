@@ -1,0 +1,48 @@
+/* box-sizing fix */
+* { 
+    //border: 0.5px dashed grey;
+    box-sizing: border-box;
+  }
+  
+  /* root element */
+//   html{}
+  body {
+    margin: 0;
+    font-family: AvenirNext LT Pro, Roboto;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  
+  // a {
+  //   //text-decoration: none;
+  // }
+
+  .container{
+    // border: 2px dashed red;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  input, button{
+    font-family: AvenirNext LT Pro, Roboto;
+  }
+   
+  .main-section {
+    @include desktop{  
+      display: flex;
+      padding-right:11.25rem;      
+    }
+
+    &__left {
+      @include desktop{ 
+        width:100%;
+      }
+    }
+    &__right {
+      @include desktop{
+      }
+    }
+  }
+  

@@ -1,0 +1,712 @@
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-Heavy.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-HeavyIt.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-HeavyIt.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Demi.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-BoldIt.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-BoldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-DemiIt.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-DemiIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-LightIt.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-LightIt.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-MediumIt.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-MediumIt.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-Light.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-Medium.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-It.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-It.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-Thin.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro UltLight';
+  src: url("../../assets/fonts/AvenirNextLTPro-UltLt.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-UltLt.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro UltLight';
+  src: url("../../assets/fonts/AvenirNextLTPro-UltLtIt.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-UltLtIt.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../assets/fonts/AvenirNextLTPro-ThinIt.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-ThinIt.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* box-sizing fix */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* root element */
+body {
+  margin: 0;
+  font-family: AvenirNext LT Pro, Roboto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container, .site-header__container, .site-video, .main-video, .comments__conversations {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+input, button {
+  font-family: AvenirNext LT Pro, Roboto;
+}
+
+.site-header {
+  border: 2px dashed red;
+}
+
+.site-header__container {
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__container {
+    padding: 0 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .site-header__container {
+    padding: 0 180px;
+  }
+}
+
+.site-header__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__brand {
+    margin-right: 169px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .site-header__brand {
+    margin-right: 509px;
+  }
+}
+
+.site-header__logo {
+  width: 50%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__logo {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+  }
+}
+
+.site-header__search {
+  border: 1px solid #E1E1E1;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__search {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 24px;
+  }
+}
+
+.site-header__search--icon {
+  background-color: #FAFAFA;
+  height: 100%;
+}
+
+.site-header__search--text {
+  border: none;
+  background-color: pink;
+  padding-left: 16px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #323232;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__search--text {
+    width: 100%;
+  }
+}
+
+.site-header__testing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-header__upload {
+  width: 80%;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  background: #0095FF;
+  border-radius: 5px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__upload {
+    margin-top: 16px;
+  }
+}
+
+.site-header__upload--icon {
+  background: #0095FF;
+  height: 100%;
+  padding-left: 75px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__upload--icon {
+    padding-left: 10px;
+  }
+}
+
+.site-header__upload--text {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  background: #0095FF;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__upload--text {
+    padding-right: 10px;
+  }
+}
+
+.site-header__user--image {
+  width: 48px;
+  height: 48px;
+  border-radius: 90%;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__user--image {
+    margin-left: 24px;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-video {
+    padding: 0 1.5rem;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .site-video {
+    padding: 0 180px;
+  }
+}
+
+.site-video__video {
+  margin-top: 0;
+  max-width: 100%;
+  min-height: 183px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-video__video {
+    max-width: 700px;
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .site-video__video {
+    max-width: 944px;
+    min-height: 540px;
+  }
+}
+
+.main-video {
+  border: 2px dashed red;
+}
+
+.main-video__container {
+  border: 2px dashed red;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-video__container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-video__container {
+    padding-top: 0;
+    padding-left: 180px;
+    padding-right: 32px;
+    width: 80%;
+  }
+}
+
+.main-video__title {
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #323232;
+  padding-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-video__title {
+    padding-top: 48px;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+  }
+}
+
+.main-video__information {
+  border: 2px dashed red;
+}
+
+@media screen and (min-width: 768px) {
+  .main-video__information {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.main-video__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-video__content {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.main-video__name {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #323232;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-video__name {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}
+
+.main-video__date {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #AFAFAF;
+}
+
+@media screen and (min-width: 768px) {
+  .main-video__date {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+}
+
+.main-video__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-video__info {
+    padding: 0;
+  }
+}
+
+.main-video__views {
+  padding-right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .main-video__views {
+    padding-right: 24px;
+  }
+}
+
+.main-video__viewsicon {
+  margin: 0;
+  padding-right: 8px;
+}
+
+.main-video__viewscount {
+  margin: 0;
+}
+
+.main-video__likes {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-video__likesicon {
+  margin: 0;
+  padding-right: 8px;
+}
+
+.main-video__likescount {
+  margin: 0;
+}
+
+.main-video__divider {
+  color: #AFAFAF;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.main-video__description {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-video__description {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-video__description {
+    width: 65%;
+  }
+}
+
+.comments__conversations {
+  height: 100%;
+  padding: 0  1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__conversations {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .comments__conversations {
+    margin: 0;
+  }
+}
+
+.comments__heading {
+  margin: 0 auto;
+  padding-bottom: 32px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__heading {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .comments__heading {
+    padding-bottom: 3.5rem;
+    padding-top: 3rem;
+  }
+}
+
+.comments__commentscontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 1440px) {
+  .comments__commentscontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.comments__userimage {
+  width: 48px;
+  height: 48px;
+  border-radius: 90%;
+  margin: 1.25rem 1.25rem 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__testingbutton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.comments__formlabel {
+  margin: 0 auto;
+  color: #AFAFAF;
+  font-family: AvenirNext LT Pro;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.comments__forminput {
+  width: 100%;
+  height: auto;
+  border: 0.0625rem solid #AFAFAF;
+  background-color: #FAFAFA;
+  border-radius: 0.25rem;
+  padding: 16px;
+  font-family: AvenirNext LT Pro;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__forminput {
+    width: 100%;
+  }
+}
+
+.comments__forminput:active {
+  border: 0.125rem solid #323232;
+}
+
+.comments__formsubmit {
+  width: 100%;
+  font-family: AvenirNext LT Pro;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #0095FF;
+  border: none;
+  border-radius: 0.25rem;
+  padding-top: 0.6875rem;
+  padding-bottom: 0.6875rem;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  .comments__formsubmit {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+.commentlist_divider {
+  border: 0;
+  border-top: 0.0625rem solid #E1E1E1;
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
