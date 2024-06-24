@@ -2,7 +2,7 @@ import React from 'react';
 
 function UserImage(props) {
     return (
-            <img className={props.className} src={props.user} alt="user image"/>
+        <img className={props.className} src={props.user} alt="user image"/>
     )
 }
 

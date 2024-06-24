@@ -49,8 +49,8 @@
     }
 
     &__userimage{
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
         border-radius: 90%;
         margin:1.5rem 1rem 0 0;
     }
@@ -71,8 +71,7 @@
         justify-content: space-between;  
         
         @include tablet{
-            justify-content: unset; 
-            
+            justify-content: unset;             
         }
         
     }
@@ -109,6 +108,7 @@
         font-weight: 400;
         padding-bottom:1.5rem;
         width:100%;
+
         @include tablet{
             padding-right:2.5rem;
         }
