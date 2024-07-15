@@ -1,29 +1,16 @@
 import React from "react";
+import axios from 'axios';
 import Button from "./Button";
 import videotpreview from "../assets/images/Upload-video-preview.jpg";
-import { Link, Redirect, useHistory} from 'react-router-dom';
+import { Link, Redirect} from 'react-router-dom';
 
 class Upload extends React.Component {
     state={
         video_title: "",
         video_description: "",
+        formIsSubmitted: false,
     };
 
-    componentDidMount(){
-        this.upload();
-    }
-
-    upload = () => {
-        this.setState(
-            {
-                someKey: "someValue",
-            },
-            () => {
-                console.log(this.state.someKey);
-            }
-        );
-        console.log(this.state.someKey);
-    };
 
     updateTitle = (event) =>{
         this.setState({
@@ -39,7 +26,7 @@ class Upload extends React.Component {
 
     
 
-    handleSubmit = (event) => {
+    handleFormSubmit = (event) => {
         event.preventDefault();
         if (!this.state.video_title) {
             alert("Video title can not be empty.");
@@ -51,41 +38,39 @@ class Upload extends React.Component {
             return;
             } 
         if (this.state.video_title && this.state.video_description) {
-            alert("Video Uploaded Successfully!");
-            return;
+            this.setState({formIsSubmitted:true})
         }
-        
-        // alert("Video is uploaded");
-       
+        this.postNewVideo();   
     }
 
-    handleClick = () => {
-        alert("Video is uploaded");
-
-        // if (!this.state.video_title) {
-        //     alert("Video title can not be empty.");
-        //     return;
-        // }
-
-        // if (!this.state.video_description) {
-        //     alert("Video description can not be empty.");
-        //     return;
-        //     } 
-    
-        // if (this.state.video_title && this.state.video_description) {
-        //     alert("Video Uploaded Successfully!");
-        //     return;
-        // }
+    postNewVideo = () => {
+        axios
+        .post(`http://localhost:5000/videos`, {
+            title: this.state.video_title,
+            image:{videotpreview},
+            description: this.state.video_description,
+        })
+        .then((response) => {
+            console.log('response from posting to api', response);
+            this.setState({
+            video_title: '',
+            video_description: '',
+            });
+        })
+        .catch((err) => console.log(err));
     };
 
     render(){
+        if(this.state.formIsSubmitted){
+            return <Redirect to={`/`}/>
+        }
         return (
             <div>
                 <hr className="upload__topdivider"/>
                 <section className="upload">
                     <h1 className="upload__title">Upload Video</h1>
                     <hr className="upload__divider"/>
-                    <form id= "upload__form" className="upload__form" onSubmit={this.handleSubmit}>
+                    <form id= "upload__form" className="upload__form" onSubmit={this.handleFormSubmit}>
                         <div className="upload__formgroups">
                             <div className="upload_imagegroup">
                                 <label htmlFor="videothumnail" className="upload__formlabel">VIDEO THUMBNAIL</label>
@@ -100,9 +85,7 @@ class Upload extends React.Component {
                         </div>
                         <hr className="upload__divider"/>
                         <div className="upload__buttongroup">
-                            <Link to={`/`}>
-                            <Button type="button" text="PUBLISH" className="upload__submitpublish" onClick={this.handleClick}/>
-                            </Link>
+                            <Button type="button" text="PUBLISH" className="upload__submitpublish"/>                       
                             <Link to={`/`}>
                             <Button text="CANCEL" className="upload__submitcancel"/>
                             </Link>

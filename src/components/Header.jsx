@@ -15,7 +15,7 @@ function Header(props) {
       <header className="site-header">
         <div className="site-header__container">
           <Link to={`/`} className="site-header__brand" >
-            <img className="site-header__logo" src={logo} alt="brainflix logo"/>
+            <img className="site-header__logo" src={logo} alt="brainflix logo"/> 
           </Link>
         
           <div className="site-header__search">
