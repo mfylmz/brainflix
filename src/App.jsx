@@ -14,7 +14,7 @@ class App extends Component{
   //state object
   state = {
     _isMounted: false,
-    nowPlayingID: "1af0jruup5gu",
+    nowPlayingID: "84e96018-4022-434e-80bf-000ce4cd12b8",
     nowPlayingIndex: 0,
     videos: [],
     videoDetails:{
@@ -94,7 +94,7 @@ class App extends Component{
           <aside className="main-section__right">
             <VideoList
             videos={videos}
-            currentVideoID={this.props.match.params.id ?? "1af0jruup5gu"}
+            currentVideoID={this.props.match.params.id ?? "84e96018-4022-434e-80bf-000ce4cd12b8"}
             setNowPlayingVideo={this.setNowPlayingVideo}/>
           </aside>           
         </main>  
