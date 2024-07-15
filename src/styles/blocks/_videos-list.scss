@@ -52,6 +52,14 @@
         width:100%;
         padding-bottom: 1rem;
         overflow:auto;
+<<<<<<< HEAD
+=======
+        // // overflow: hidden;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 2;
+        // -webkit-box-orient: vertical;
+        // overflow: hidden;        
+>>>>>>> sprint-3
 
         @include desktop{
             overflow: hidden;

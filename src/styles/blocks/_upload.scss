@@ -70,6 +70,7 @@
     &__formlabel{
         margin:0 auto;
         color:$silver;
+<<<<<<< HEAD
         font-size:0.875rem;
         line-height:1.375rem;
         font-weight: 600;
@@ -78,6 +79,21 @@
         @include desktop{
             font-size:1.5rem;
             line-height:2rem;
+=======
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        display: flex; 
+
+        @include tablet{
+            font-weight: 600;
+
+        }
+
+        @include desktop{
+            font-size: 1rem;
+            line-height: 1.375rem;
+>>>>>>> sprint-3
             font-weight: 600;
         }
     }
@@ -98,6 +114,10 @@
         @include desktop{
             min-width:21.5rem;
             margin-bottom: 0;
+<<<<<<< HEAD
+=======
+            // max-height: 9.5625rem;
+>>>>>>> sprint-3
         }
     }
 
@@ -118,9 +138,20 @@
         background-color: $alabaster;
         margin-bottom:1.5rem;
 
+<<<<<<< HEAD
         @include desktop{
             font-size:1.5rem;
             line-height:2rem;
+=======
+        @include tablet{
+            font-size:1rem;
+        }
+
+        @include desktop{
+            font-size:1.3rem;
+            line-height:2rem;
+            padding:0.625rem;
+>>>>>>> sprint-3
         }
     }
 
@@ -137,12 +168,22 @@
 
         @include tablet{
             margin-bottom:2.5rem;
+<<<<<<< HEAD
+=======
+            font-size:1rem;
+>>>>>>> sprint-3
         }
 
         @include desktop{
             min-height:5.875rem;
+<<<<<<< HEAD
             font-size:1.5rem;
             line-height:2rem;
+=======
+            font-size:1.3rem;
+            line-height:2rem;
+            padding:0.625rem;
+>>>>>>> sprint-3
         }
     }
 

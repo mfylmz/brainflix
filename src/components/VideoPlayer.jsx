@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -35,5 +36,16 @@ const VideoPlayer = (props) => {
     </section>
   );
 };
+=======
+import React from 'react';
+
+function VideoPlayer(props) {
+    return (
+        <section className="site-video"> 
+            <video className="site-video__video" controls poster={props.posterImage.image}>Sorry, your browser doesn't support embedded videos!</video>
+        </section>
+    )
+}
+>>>>>>> sprint-3
 
 export default VideoPlayer;
