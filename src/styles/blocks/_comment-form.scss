@@ -1,0 +1,139 @@
+.comments{
+    overflow: auto;
+    &__conversations{
+        @extend .container;
+        height: 100%;
+        padding: 0  1rem;
+        
+        @include tablet {
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            padding-right:2.5rem;
+        }
+
+        @include desktop {
+            margin: 0;
+            padding-left: 11.25rem;
+        }
+    }
+
+    &__divider{
+        border:0;
+        border-top: 0.0625rem solid $mercury;
+        margin: 0;
+
+        @include tablet{
+            padding: 0 1.5rem;
+        }
+    }
+    &__heading{
+        margin:0 auto;
+        padding-bottom:2rem;
+        font-size:1.5rem;
+        line-height:2rem;
+        font-weight: 500;
+        overflow: auto;
+
+        @include desktop {
+            padding-bottom:2rem;           
+        }
+    }
+
+    &__commentscontainer{
+        display: flex;
+        
+        @include tablet {    
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        @include desktop {
+            display: flex;
+        }
+    }
+
+    &__userimage{
+        width:3rem;
+        height:3rem;
+        border-radius: 90%;
+        background-position:left center;
+        margin:1.25rem 1.25rem 0 0;  
+    }
+    
+    &__formgroups{
+        @include tablet{
+            display: flex;
+            min-width:39rem;  
+            align-items:flex-end;
+        }
+    }
+    
+    &__formgroup{
+        @include tablet {
+        }
+    }
+
+    &__formlabel{
+        margin:0 auto;
+        color:$silver;
+        font-family: AvenirNext LT Pro;
+        font-size:0.875rem;
+        line-height:1.375rem;
+        font-weight: 600;
+        padding-bottom: 0.5rem;     
+    }   
+
+    &__forminput{
+        width: 100%;
+        height: auto;
+        border: 0.0625rem solid $silver;
+        background-color: $alabaster;
+        border-radius:0.25rem;
+        padding:1rem;
+        font-family: AvenirNext LT Pro;
+        font-size:0.875rem;
+        line-height:1.375rem;
+        font-weight: 400;
+        color:$black;
+        margin-bottom:1rem; 
+        
+        @include tablet{
+            min-width:27.5rem;
+            padding-bottom:0;
+        } 
+        @include desktop{
+            max-width:27.25rem;
+        } 
+        
+        &:active{
+            border: 0.125rem solid $black;
+        }                
+    }
+
+    &__formsubmit{
+        width: 100%;
+        font-family: AvenirNext LT Pro;
+        font-size:0.875rem;
+        line-height:1.375rem;
+        font-weight: 600;
+        color:$white;
+        background-color:$blue;
+        border:none;
+        border-radius: 0.25rem;
+        padding-top: 0.6875rem;
+        padding-bottom: 0.6875rem;
+        margin-bottom:2.5rem;
+
+        @include tablet {
+            margin-left: 1rem;
+            margin-bottom: 1.1875rem;
+            height: 64px;
+        }
+
+        @include desktop {
+            padding-left: 0.9375rem;
+            padding-right: 0.9375rem;
+        }
+    }   
+    
+}    

@@ -1,0 +1,217 @@
+.upload{
+    overflow: auto;
+    @extend .container;
+    padding:0 1rem;
+    @include tablet{
+        padding:0 1.5rem;
+    }  
+    @include desktop{
+        padding-top:0;
+        padding:0 11.25rem;
+        margin-right:0;
+    } 
+
+    &__topdivider{
+        border:0;
+        border-top: 0.0625rem solid $mercury;
+        margin: 0;
+        width:100%;
+    }
+
+    &__divider{
+        border:0;
+        border-top: 0.0625rem solid $mercury;
+        margin: 0;
+        width:100%;
+        visibility: hidden;
+
+        @include tablet{
+            margin-bottom:2.5rem;
+            visibility: unset;
+        }
+    }       
+
+    &__title{
+        margin:0 auto;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+        color:$black;   
+        padding-top:1.5rem;
+        padding-bottom: 2rem;   
+        
+        @include tablet{
+            padding-top:3rem;
+            font-size: 2.25rem;
+            line-height:2.75rem;
+            font-weight: 600;
+        }
+
+        @include desktop{
+            padding-top:2.375rem;
+            font-size:3.75rem;
+            line-height:4.25rem;
+        }
+    }
+
+    &__formgroups{
+        @include desktop{
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+
+    &__imagegroup{
+        @include desktop{
+            height:auto;
+        }
+    }
+
+    &__formlabel{
+        margin:0 auto;
+        color:$silver;
+        font-size:0.875rem;
+        line-height:1.375rem;
+        font-weight: 600;
+        display: flex; 
+
+        @include desktop{
+            font-size:1.5rem;
+            line-height:2rem;
+            font-weight: 600;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        max-width: 18rem;
+        max-height: 9.5625rem;
+        border-radius:0.25rem;
+        margin-bottom:2rem;
+
+        @include tablet{
+            max-width: 21.5rem;
+            max-height: 11.44rem;
+            margin-bottom:2.5rem;
+        }
+
+        @include desktop{
+            min-width:21.5rem;
+            margin-bottom: 0;
+        }
+    }
+
+    &__formgroup{
+        @include desktop{
+            width:100%;
+            margin-left:1.5rem;
+        }
+    }
+
+    &__input{
+        width:100%;
+        padding:1rem;
+        font-family: AvenirNext LT Pro;
+        color: $black;
+        border-radius:0.25rem;
+        border: 0.0625rem solid $silver;
+        background-color: $alabaster;
+        margin-bottom:1.5rem;
+
+        @include desktop{
+            font-size:1.5rem;
+            line-height:2rem;
+        }
+    }
+
+    &__textarea{
+        width:100%;
+        padding: 1rem;
+        color: $black;
+        min-height:8.94rem;
+        font-family: AvenirNext LT Pro;
+        border-radius: 0.25rem;
+        border: 0.0625rem solid $silver;
+        background-color: $alabaster;
+        margin-bottom:2rem;
+
+        @include tablet{
+            margin-bottom:2.5rem;
+        }
+
+        @include desktop{
+            min-height:5.875rem;
+            font-size:1.5rem;
+            line-height:2rem;
+        }
+    }
+
+    &__buttongroup{
+        @include tablet{
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            position: absolute;
+            right:1.5rem;
+        }
+
+        @include desktop{
+            right:0;
+            margin-right: 11.25rem;
+        }
+    }
+
+    &__submitpublish{
+        width: 100%;
+        font-family: AvenirNext LT Pro;
+        font-size:0.875rem;
+        line-height:1.375rem;
+        font-weight: 600;
+        color:$white;
+        background-color:$blue;
+        border:none;
+        border-radius: 0.25rem;
+        padding-top: 0.6875rem;
+        padding-bottom: 0.6875rem;
+        margin-bottom:1.5rem;
+
+        @include tablet {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin: 0;
+            padding-left:3.125rem;
+            padding-right:3.125rem;       
+        }
+
+        @include desktop {
+            padding-left: 0.9375rem;
+            padding-right: 0.9375rem;
+            font-size:1.5rem;
+            line-height:2rem;
+        }
+    }
+
+    &__submitcancel{
+        width: 100%;
+        font-family: AvenirNext LT Pro;
+        font-size:0.875rem;
+        line-height:1.375rem;
+        font-weight: 600;
+        color:$blue;
+        background-color:$white;
+        border:none;
+        border-radius: 0.25rem;
+        margin-bottom:1.5rem;
+
+        @include tablet {
+            margin: 0;
+            padding-left:3rem;
+            padding-right: 3rem;
+        }
+
+        @include desktop {
+            font-size:1.5rem;
+            line-height:2rem;
+        }
+    }
+}

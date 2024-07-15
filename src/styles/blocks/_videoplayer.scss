@@ -1,0 +1,29 @@
+.site-video{
+    @extend .container;
+    @include tablet{
+        padding:0 1.5rem;
+        background-color: black;
+        display: flex;
+        justify-content:center;
+    }
+
+    @include desktop{
+        padding:0 11.25rem;
+    }
+
+    &__video {
+        margin-top:0;
+        max-width: 100%;
+        min-height:11.4375rem;
+
+        @include tablet{
+            max-width: 43.75rem;
+            min-height: 25rem;
+        }
+
+        @include desktop{
+            max-width: 59rem;
+            min-height: 33.75rem;
+        }
+    }
+}    
