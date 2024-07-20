@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
@@ -8,7 +7,6 @@ import App from "./App";
 import Header from "./components/Header";
 import Upload from "./components/Upload";
 import "./styles/main.scss";
-=======
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
@@ -18,14 +16,12 @@ import App from './App';
 import Header from './components/Header';
 import Upload from './components/Upload';
 import "./styles/main.scss"; 
->>>>>>> sprint-3
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
       <Switch>
-<<<<<<< HEAD
         <Route path="/" component={App} exact />
         <Route path="/videos" component={App} exact />
         <Route path="/video/:id" component={App} />
@@ -38,7 +34,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-=======
           <Route path="/" component={App} exact />
           {/* <Route path="/videos" component={App} exact /> */}
           <Route path="/video/:id" component={App} />
@@ -52,4 +47,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
->>>>>>> sprint-3
